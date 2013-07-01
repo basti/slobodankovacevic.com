@@ -1,223 +1,231 @@
 * {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	font: 0.8em "Lucida Sans", "Trebuchet MS", Verdana, Arial, Sans-Serif;
+  font: 0.8em "Lucida Sans", "Trebuchet MS", Verdana, Arial, Sans-Serif;
 }
 
 img {
-	border:0;
+  border:0;
 }
 
 a {
-	text-decoration: underline;
-	color: #aa2211;
+  text-decoration: underline;
+  color: #aa2211;
 }
 
 a:hover {
-	color: #000;
+  color: #000;
 }
 
 hr {
-	width: 80%;
-	border: 0;
-	color: #FFB200;
-	background-color: #FFB200;
-	height: 2px;
-	margin: 15px 0 20px 30px;
+  width: 80%;
+  border: 0;
+  color: #FFB200;
+  background-color: #FFB200;
+  height: 2px;
+  margin: 15px 0 20px 30px;
 }
 
 #wrap {
-	margin: 20px auto;
-	width: 80%;
-	padding: 10px;
-	background-color: #fff;
+  margin: 20px auto;
+  width: 80%;
+  padding: 10px;
+  background-color: #fff;
 }
 
 
 #header {
-	height: 90px;
-	background-color: #f0f0f0;
-	text-align:center;
-	border: 1px dashed #777;
+  height: 90px;
+  background-color: #f0f0f0;
+  text-align:center;
+  border: 1px dashed #777;
 }
 
 #header h1 {
-	padding-left: 10px;
-	padding-top: 20px;
-	font-size: 1.8em;
-	color: #cc4411;
+  padding-left: 10px;
+  padding-top: 20px;
+  font-size: 1.8em;
+  color: #cc4411;
 }
 
 #header h2 {
-	padding-left: 10px;
-	padding-top: 0px;
-	font-size: 1em;
-	color: #aa2211;
+  padding-left: 10px;
+  padding-top: 0px;
+  font-size: 1em;
+  color: #aa2211;
 }
 
 #menu {
-	text-align: center;
-	margin-top: 10px;
-	font-size : 1.3em;
-	padding:2px;
-	font-weight: bold;
-	font-family:Arial, Helvetica, sans-serif;
-	border: 0px solid #D8E3EE;
-	background: #F9FCFC;
+  text-align: center;
+  margin-top: 10px;
+  font-size : 1.3em;
+  padding:2px;
+  font-weight: bold;
+  font-family:Arial, Helvetica, sans-serif;
+  border: 0px solid #D8E3EE;
+  background: #F9FCFC;
 }
 
 #menu a {
-	color : #aa2211;
-	text-decoration : none;
-	padding: 10px;
+  color : #aa2211;
+  text-decoration : none;
+  padding: 10px;
 }
 
 #menu a:hover {
-	color : #000;
+  color : #000;
 }
 
 
 #content {
-	text-align: left;
-	margin-top: 5px;
-	padding: 10px;
-	font-size: 1.2em;
+  text-align: left;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1.2em;
 }
 
 #content h2 {
-	font-size: 1.4em; color : #cc4411;
-	padding: 0 0 5px 0;
+  font-size: 1.4em; color : #cc4411;
+  padding: 0 0 5px 0;
 }
 
 #content h3 {
-	font-size: 1.2em; color : #881100;
-	padding: 10px 0 5px 0;
+  font-size: 1.2em; color : #881100;
+  padding: 10px 0 5px 0;
 }
 
 #content h3 span {
-	font-size: 0.8em; color : #999;
+  font-size: 0.8em; color : #999;
 }
 
 #footer {
-	margin-top: 25px;
-	clear: both;
-	text-align: center;
-	font-size:0.9em;
-	padding:2px;
-	border-top: 1px dashed #777;
+  margin-top: 25px;
+  clear: both;
+  text-align: center;
+  font-size:0.9em;
+  padding:2px;
+  border-top: 1px dashed #777;
 }
 
 #footer a {
-	text-decoration : underline;
+  text-decoration : underline;
 }
 
 .date {
-	padding-bottom:2px;
-	font-size: 0.8em;
-	color:#999999;
-	font:Arial, Helvetica, sans-serif;
+  padding-bottom:2px;
+  font-size: 0.8em;
+  color:#999999;
+  font:Arial, Helvetica, sans-serif;
 }
 
 #twocolumnsleft {
-	width:45%;
-	float:left;
-	background:#fff;
-	padding-bottom:10px;
-	padding-left:5px;
+  width:45%;
+  float:left;
+  background:#fff;
+  padding-bottom:10px;
+  padding-left:5px;
 }
 
 #twocolumnsleft h2 {
-	font-size: 1.4em; color : #FFB200;
-	padding: 0 0 5px 0;
+  font-size: 1.4em; color : #FFB200;
+  padding: 0 0 5px 0;
 }
 
 #twocolumnsleft h3 {
-	font-size: 1.2em; color : #FFB200;
-	padding: 0 0 5px 0;
+  font-size: 1.2em; color : #FFB200;
+  padding: 0 0 5px 0;
 }
 
 #twocolumnsleft ul {
-	padding: 15px 0 5px 0;
-	list-style-type: none;
+  padding: 15px 0 5px 0;
+  list-style-type: none;
 }
 
 #twocolumnsleft ul li {
-	padding-bottom:10px;
+  padding-bottom:10px;
 }
 
 #twocolumnsright {
-	width:45%;
-	float:right;
-	background:#fff;
-	padding-bottom:10px;
-	padding-right:5px;
+  width:45%;
+  float:right;
+  background:#fff;
+  padding-bottom:10px;
+  padding-right:5px;
 }
 
 .feedburnerFeedBlock ul {
-	list-style: none;
-	padding-bottom: 15px;
+  list-style: none;
+  padding-bottom: 15px;
 }
 
 .feedburnerFeedBlock ul li {
-	padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .fbsubscribelink {
-	float: left;
+  float: left;
 }
 
 #creditfooter {
-	float: right;
+  float: right;
 }
 
 .feedTitle {
-	padding-bottom: 15px;
-	font-size: 1.4em;
+  padding-bottom: 15px;
+  font-size: 1.4em;
 }
 
 #content p {
-	padding-bottom:20px;
+  padding-bottom:20px;
 }
 
 .go_right {
-	float:right;
+  float:right;
 }
 
 .box {
-	width:350px;
-	padding:10px;
-	margin:10px;
-	border: 1px dashed #777;
-	background-color: #f0f0f0;
+  width:350px;
+  padding:10px;
+  margin:10px;
+  border: 1px dashed #777;
+  background-color: #f0f0f0;
+}
+
+.hire_me_box {
+  text-align:center;
+  padding:10px 10px 10px 0;
+  margin:10px 10px 10px 0;
+  border: 1px dashed #777;
+  background-color: #f0f0f0;
 }
 
 div#hireme img.photo {
-	float:left;
-	margin:3px;
-	margin-right:15px;
-	border:1px solid #777;
-	width:80px;
+  float:left;
+  margin:3px;
+  margin-right:15px;
+  border:1px solid #777;
+  width:80px;
 }
 
 .clear {
-	clear: both;
+  clear: both;
 }
 
 /*ul li#linkedin {
-	list-style-image: url("../images/social_icons/linkedin_32.png");
+  list-style-image: url("../images/social_icons/linkedin_32.png");
 }
 */
 div#social ul {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 div#social ul li {
-	padding:5px;
+  padding:5px;
 }
 
 div#social ul img {
-	vertical-align:middle;
+  vertical-align:middle;
 }
