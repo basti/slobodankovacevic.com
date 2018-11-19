@@ -1,2 +1,0 @@
-#!/usr/bin/env bash
-jekyll && rsync -avz --delete -e "ssh -i /Users/basti/.ssh/ec2.pem" _site/ ubuntu@ec2-107-20-184-74.compute-1.amazonaws.com:~/domains/slobodankovacevic.com/public_html
