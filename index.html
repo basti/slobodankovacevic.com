@@ -2,34 +2,273 @@
 layout: main
 title:
 ---
-<div id="content">
-  <div id="hireme" class="box go_right">
-    <h2>Need a Ruby/Rails developer?</h2>
-    <img src="images/slobodan-110x110.gif" class="photo" alt="Slobodan Kovacevic" />
-    <!--
-    <p>
-      <strong style="font-size:1.2em;">I am available for hire.</strong>
-    </p>
-    <p>
-      If you require my services please
-      <a href="http://orangeiceberg.com/contact">contact me to discuss details</a>.
-    </p>
-    -->
-    <p>
-      <strong style="font-size:1.2em;">Currently I am not available for hire.</strong>
-    </p>
-    <p>
-      You can still
-      <a href="http://orangeiceberg.com/contact">contact me</a> if you'd like to chat about something.
-    </p>
-  </div>
 
+<!-- About Section -->
+<div id="about">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>About Me</h2>
+      <hr>
+    </div>
+    <div class="row">
+      {% comment %}
+      <div class="col-md-12 text-center"><img src="images/slobodan-110x110.gif" class="img-responsive"></div>
+      {% endcomment %}
+      <div class="col-md-8 col-md-offset-2">
+        <div class="about-text">
+          <p>
+            My name is <strong>{{ site.who_am_i }}</strong>. I have been a web developer since 1998.
+            During that time I had a chance to work with many different programming languages and technologies.
+          </p>
+
+          {% comment %}
+          <p class="text-center"><a class="btn btn-primary" href="#"><i class="fa fa-download"></i> Download Resume</a></p>
+          {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% comment %}
+<!-- Skills Section -->
+<div id="skills" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Skills</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="95"> <span class="percent">95</span> </span>
+        <h4>HTML5</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
+        <h4>CSS3</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+        <h4>jQuery</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="80"> <span class="percent">80</span> </span>
+        <h4>WordPress</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="70"> <span class="percent">70</span> </span>
+        <h4>Photoshop</h4>
+      </div>
+      <div class="col-md-4 col-sm-6 skill"> <span class="chart" data-percent="65"> <span class="percent">65</span> </span>
+        <h4>Illustrator</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+  <div class="container">
+    <div class="section-title text-center center">
+      <h2>Portfolio</h2>
+      <hr>
+    </div>
+    <div class="categories">
+      <ul class="cat">
+        <li>
+          <ol class="type">
+            <li><a href="#" data-filter="*" class="active">All</a></li>
+            <li><a href="#" data-filter=".web">Web Design</a></li>
+            <li><a href="#" data-filter=".app">App Development</a></li>
+            <li><a href="#" data-filter=".branding">Branding</a></li>
+          </ol>
+        </li>
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Web Design</small> </div>
+              <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>App Development</small> </div>
+              <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Web Design</small> </div>
+              <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Web Design</small> </div>
+              <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 app">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>App Development</small> </div>
+              <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 branding">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Branding</small> </div>
+              <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 branding app">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>App Development, Branding</small> </div>
+              <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 col-lg-3 web">
+          <div class="portfolio-item">
+            <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project description" rel="prettyPhoto">
+              <div class="hover-text">
+                <h4>Project Title</h4>
+                <small>Web Design</small> </div>
+              <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title"> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Achievements Section -->
+<div id="achievements" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Some Stats</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="200ms">
+        <div class="achievement-box"> <span class="count">310</span>
+          <h4>Happy Clients</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="400ms">
+        <div class="achievement-box"> <span class="count">4700</span>
+          <h4>Hours of Work</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="600ms">
+        <div class="achievement-box"> <span class="count">30</span>
+          <h4>Awards Won</h4>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="800ms">
+        <div class="achievement-box"> <span class="count">8</span>
+          <h4>Years of Experience</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endcomment %}
+
+<div id="resume" class="text-center">
+  <div class="container">
+    <div class="section-title center">
+      <h2>Resume</h2>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline">
+          {% for resume_item in site.resume %}
+          <li{% cycle '', ' class="timeline-inverted"' %}>
+            <div class="timeline-image">
+              <h4>
+                {{ resume_item["start_year"] }}
+                <br>-<br>
+                {{ resume_item["end_year"] }}
+              </h4>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>{{ resume_item["company"] }}</h4>
+                <h4 class="subheading">{{ resume_item["position"] }}</h4>
+              </div>
+              <div class="timeline-body">
+                <p>
+                  {{ resume_item["description"] }}
+                </p>
+              </div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="section-title center">
+        <h2>Contact</h2>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-6">
+          <i class="fa fa-map-marker fa-2x"></i>
+          <p>Currently living in Novi Sad, Serbia</p>
+        </div>
+        <div class="col-md-6">
+          <i class="fa fa-envelope-o fa-2x"></i>
+          <p>Contact me through <a href="https://axiomq.com/contact/">AxiomQ</a></p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h3>Find me online on...</h3>
+        <div class="social">
+          <ul>
+            <li><a href="https://twitter.com/thebasti"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://github.com/basti"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/slobodankovacevic"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/thebasti"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://stackoverflow.com/users/270237/slobodan-kovacevic"><i class="fa fa-stack-overflow"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% comment %}
+<div id="content">
   <div id="aboutme">
-    <h2>About Me</h2>
-    <p>
-      Hi, my name is <strong>Slobodan Kovačević</strong>. I have been a web developer since 1998.
-      During that time I had a chance to work with many different programming languages and technologies.
-    </p>
     <p>
       Since 2007 I have been working with <strong>Ruby</strong> and <strong>Ruby on Rails</strong>.
       Here are some of the web apps I've been working on that are built on top of Rails:
@@ -44,136 +283,5 @@ title:
     </p>
   </div>
 
-  <div class="clear">&nbsp;</div>
-
-  <div id="social" class="box go_right">
-    <h2>Find me online on...</h2>
-    <ul>
-      <li>
-        <a href="http://orangeiceberg.com"><img src="images/orange-iceberg-219x219.gif" width="32" alt="Orange Iceberg" /></a>
-        <a href="http://orangeiceberg.com">Orange Iceberg</a> - my company
-      </li>
-      <li>
-        <a href="http://icebergist.com"><img src="images/social_icons/rss_32.png" alt="Icebergist" /></a>
-        <a href="http://icebergist.com">Icebergist</a> - my blog
-      </li>
-      <li>
-        <a href="http://twitter.com/icebergist"><img src="images/social_icons/twitter_32.png" alt="@icebergist at Twitter" /></a>
-        <a href="http://twitter.com/icebergist">Twitter (@icebergist)</a> for tweets in English.
-      </li>
-      <li>
-        <a href="http://twitter.com/thebasti"><img src="images/social_icons/twitter_32.png" alt="@thebasti at Twitter" /></a>
-        <a href="http://twitter.com/thebasti">Twitter (@thebasti)</a> for tweets in Serbian.
-      </li>
-      <li>
-        <a href="http://tumblelog.slobodankovacevic.com"><img src="images/social_icons/tumblr_32.png" alt="Tumblelog" /></a>
-        <a href="http://tumblelog.slobodankovacevic.com">Tumblr</a>
-      </li>
-      <li>
-        <a href="http://github.com/basti"><img src="images/social_icons/github_32.png" alt="basti on Github" /></a>
-        <a href="http://github.com/basti">Github (basti)</a>
-      </li>
-      <li>
-        <a href="http://workingwithrails.com/person/7162-slobodan-kovacevic"><img src="images/rails-logo-54x54.png" width="32" alt="Working with Rails" /></a>
-        <a href="http://workingwithrails.com/person/7162-slobodan-kovacevic">Working With Rails profile</a>
-        <div style="padding-left:36px;"><a href="http://workingwithrails.com/recommendation/new/person/7162-slobodan-kovacevic"><img alt="Recommend Me" src="http://workingwithrails.com/images/tools/compact-small.jpg" /></a></div>
-      </li>
-      <li>
-        <a href="http://www.linkedin.com/in/slobodankovacevic"><img src="images/social_icons/linkedin_32.png" alt="Linkedin" /></a>
-        <a href="http://www.linkedin.com/in/slobodankovacevic">Linkedin profile</a>
-      </li>
-      <li>
-        <a href="http://www.facebook.com/p/Slobodan_Kovacevic/526733220"><img src="images/social_icons/facebook_32.png" alt="Facebook" /></a>
-        <a href="http://www.facebook.com/p/Slobodan_Kovacevic/526733220">Facebook profile</a>
-      </li>
-      <li>
-        <a href="http://stackoverflow.com/users/270237/slobodan-kovacevic"><img src="images/stackoverflow-158x158.png" width="32" alt="Stack Overflow" /></a>
-        <a href="http://stackoverflow.com/users/270237/slobodan-kovacevic">Stack Overflow</a>
-        <div style="padding-left:36px;"><script src="http://stackoverflow.com/users/flair/270237.js?theme=default" type="text/javascript"></script></div>
-      </li>
-    </ul>
-  </div>
-
-  <div id="cv">
-    <h2>CV</h2>
-    <p>Here is what I have been doing so far:</p>
-
-    <h3>Orange Iceberg <span>(January 2014 - present)</span></h3>
-    <p>
-      Founded <a href="http://orangeiceberg.com">Orange Iceberg</a> a Ruby development company.
-      Worked as a project manager and lead developer.
-    </p>
-
-    <h3>Earth.org GmbH <span>(June 2012 - January 2014)</span></h3>
-    <p>
-      Worked on maintaining and updating yoga.info.
-      Created a JSON service based arhitecture to run both yoga.info and ayurvedafinder.com using the same service.
-    </p>
-
-    <h3>Reciprocity Inc. <span>(February 2011 - January 2014)</span></h3>
-    <p>
-      Worked as a Senior Engineer (Ruby on Rails) on
-      <a href="http://www.reciprocitynow.com/">Reciprocity gamification app</a>,
-      opower.com, sonatype.com and briefly on Google's GRC project.
-    </p>
-
-    <h3>Orange Iceberg <span>(June 2008 - February 2011)</span></h3>
-    <p>
-      In June 2008 I went back to freelancing as a <strong>Ruby/Rails web developer</strong>, through my own one-man company -
-      <a href="http://orangeiceberg.com">Orange Iceberg web development</a>.
-    </p>
-
-    <h3>Array Studio <span>(September 2001 - June 2008)</span></h3>
-    <p>
-      In September 2001 I co-founded <a href="http://www.arraystudio.com">Array Studio</a>
-      (a web development company) where I worked as CEO and lead developer until June 2008.
-    </p>
-
-    <h3>Student/Freelancer<span>(1998 - 2001)</span></h3>
-    <p>
-      From 1998 to 2001 I have worked as a freelance web developer, while studying Computer Science.
-    </p>
-
-    <p>
-      For more information head to
-      <a href="http://www.linkedin.com/in/slobodankovacevic">my Linkedin profile</a>.
-    </p>
-
-  </div>
-
-  {% comment %}
-  <div class="hire_me_box clear">
-    <h2>Do you have Ruby/Rails project?</h2>
-    <p>
-      <strong style="font-size:1.2em;">
-        I am available for hire.
-        <a href="http://orangeiceberg.com/contact">Contact me</a>.
-      </strong>
-    </p>
-  </div>
-  {% endcomment %}
-
-  {% comment %}
-<!--  <h2>Blogs and other "social" stuff</h2>
-  <div id="twocolumnsleft">
-    <ul>
-      <li><a href="http://orangeiceberg.com">Orange Iceberg</a> - my company through which I freelance</li>
-      <li><a href="http://icebergist.com">Icebergist</a> - a blog about web apps and web development</li>
-      <li><a href="http://tumblelog.slobodankovacevic.com">This should be interesting</a> - my tumblelog</li>
-      <li><a href="http://www.linkedin.com/in/slobodankovacevic">Linkedin profile</a></li>
-      <li><a href="http://www.facebook.com/p/Slobodan_Kovacevic/526733220">Facebook profile</a></li>
-      <li><a href="http://workingwithrails.com/recommendation/new/person/7162-slobodan-kovacevic">Recommend me on Working With Rails</a></li>
-      <li><a href="http://twitter.com/thebasti">Twitter feed</a></li>
-    </ul>
-  </div>
-
-  <div id="twocolumnsright">
-    <p>
-      <script src="http://feeds.feedburner.com/SlobodanKovacevicTumblelog?format=sigpro" type="text/javascript"></script>
-    </p>
-  </div>
- -->
-  {% endcomment %}
-
-  <div style="clear:both;">&nbsp;</div>
 </div>
+{% endcomment %}
