@@ -2,18 +2,19 @@ who_am_i: Slobodan Kovačević
 what_am_i: Ruby on Rails developer
 
 resume:
-  - company: AxiomQ
-    position: Director of Engineering
-    description: Merged two companies to create <a href="https://axiomq.com">AxiomQ</a>. Integrated existing dev teams and expanded them further.
-    start_year: 2017
-    end_year: Present
-    start_month: May
-    end_month: Present
+  # - company: AxiomQ
+  #   position: Director of Engineering
+  #   description: Merged two companies to create <a href="https://axiomq.com">AxiomQ</a>. Integrated existing dev teams and expanded them further.
+  #   start_year: 2017
+  #   end_year: Present
+  #   start_month: May
+  #   end_month: Present
   - company: Orange Iceberg
     position: Project manager/Lead developer
     description: Expanded <a href="http://orangeiceberg.com">Orange Iceberg</a> a Ruby development company and built a team of 5 Ruby developers. Worked as a project manager and lead developer.
     start_year: 2014
-    end_year: 2017
+    # end_year: 2017
+    end_year: Present
     start_month: Jan
     end_month: May
   - company: Earth.org GmbH
