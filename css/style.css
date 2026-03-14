@@ -585,18 +585,41 @@ color: #2c3e50;
 #contact .social {
 	margin-top: 60px;
 }
+#contact .social ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 16px;
+}
 #contact .social ul li {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0;
+}
+#contact .social ul li a {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	padding: 10px 16px;
+	border: 1px solid rgba(255,255,255,0.7);
+	border-radius: 999px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+}
+#contact .social ul li a:hover,
+#contact .social ul li a:focus {
+	color: #121d1f;
+	border-color: #121d1f;
 }
 #contact .social i.fa {
-	font-size: 30px;
-	padding: 4px 5px;
-	color: #fff;
+	font-size: 24px;
+	padding: 0;
+	color: inherit;
 	transition: all 0.5s;
 }
 #contact .social i.fa:hover {
-	color: #121d1f;
+	color: inherit;
 }
 #contact .btn {
 	background-color: transparent;
