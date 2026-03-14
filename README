@@ -40,5 +40,3 @@ docker compose down
 docker compose down -v
 docker compose up
 ```
-
-- On Apple Silicon, you may see a platform warning for `jekyll/jekyll:latest`. The site still runs correctly under emulation based on local verification.
