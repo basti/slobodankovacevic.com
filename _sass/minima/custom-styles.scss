@@ -1,2 +1,41 @@
 // Add custom style overrides here.
 // These are loaded after Minima's base styles.
+
+// Resume Section
+#resume {
+  padding: 30px 0 60px;
+}
+
+.resume-entry {
+  padding: 20px 0;
+  border-bottom: 1px solid $border-color-01;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.resume-date {
+  display: block;
+  font-size: 0.85rem;
+  color: $brand-color;
+  margin-bottom: 4px;
+}
+
+.resume-role {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 2px;
+}
+
+.resume-company {
+  font-size: 0.95rem;
+  color: $brand-color;
+  margin: 0 0 8px;
+}
+
+.resume-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}

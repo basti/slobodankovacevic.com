@@ -190,41 +190,17 @@ title: Resume
 </div>
 {% endcomment %}
 
-<div id="resume" class="text-center">
-  <div class="container">
-    <div class="section-title center">
-      <h2>Resume</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <ul class="timeline">
-          {% for resume_item in site.resume %}
-          <li{% cycle '', ' class="timeline-inverted"' %}>
-            <div class="timeline-image">
-              <h4>
-                {{ resume_item["end_year"] }}
-                <br>-<br>
-                {{ resume_item["start_year"] }}
-              </h4>
-            </div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>{{ resume_item["company"] }}</h4>
-                <h4 class="subheading">{{ resume_item["position"] }}</h4>
-              </div>
-              <div class="timeline-body">
-                <p>
-                  {{ resume_item["description"] }}
-                </p>
-              </div>
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
+<div id="resume">
+  <h2>Resume</h2>
+  <hr>
+  {% for resume_item in site.resume %}
+  <div class="resume-entry">
+    <span class="resume-date">{{ resume_item["start_year"] }} – {{ resume_item["end_year"] }}</span>
+    <h3 class="resume-role">{{ resume_item["position"] }}</h3>
+    <p class="resume-company">{{ resume_item["company"] }}</p>
+    <p class="resume-desc">{{ resume_item["description"] }}</p>
   </div>
+  {% endfor %}
 </div>
 
 <div id="contact" class="text-center">
