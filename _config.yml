@@ -18,7 +18,7 @@ resume:
     end_month: May
   - company: Earth.org GmbH
     position: Ruby developer
-    description: Worked on maintaining and updating yoga.info. Created a JSON service based arhitecture to run both yoga.info and ayurvedafinder.com using the same service.
+    description: Worked on maintaining and updating yoga.info. Created a JSON service based architecture to run both yoga.info and ayurvedafinder.com using the same service.
     start_year: 2012
     end_year: 2014
     start_month: June
