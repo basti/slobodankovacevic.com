@@ -18,6 +18,14 @@ This is a Jekyll site repository.
 - `_layouts/`: custom layouts when referenced
 - `css/style.css`: site-specific styling
 
+## Common tasks
+
+- Update homepage copy or sections: edit `index.html`
+- Update bio, resume, or site metadata: edit `_config.yml`
+- Update blog landing page: edit `blog.md`
+- Add or edit a blog post: add/edit files in `_posts/`
+- Adjust site styling: edit `css/style.css`
+
 ## Do not edit by default
 
 - `_site/`
