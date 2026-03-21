@@ -58,6 +58,15 @@
   color: $brand-color;
 }
 
+@media screen and (max-width: 600px) {
+  .theme-toggle {
+    display: block;
+    margin-left: 20px;
+    padding: 5px 10px;
+    text-align: right;
+  }
+}
+
 // Default (auto / light): show moon, hide sun
 .icon-sun  { display: none; }
 .icon-moon { display: block; }
