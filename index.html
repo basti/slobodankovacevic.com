@@ -47,29 +47,14 @@ title: Resume
   {% endfor %}
 </div>
 
-<div id="contact" class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="section-title center">
-        <h2>Contact</h2>
-        <hr>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="col-md-6">
-          <i class="fa fa-map-marker fa-2x"></i>
-          <p>Currently living in Novi Sad, Serbia</p>
-        </div>
-        <div class="col-md-6">
-          <i class="fa fa-envelope-o fa-2x"></i>
-          <p>
-            Contact me through
-            <a href="https://axiomq.com/contact/">AxiomQ</a>
-          </p>
-        </div>
-        <div class="clearfix"></div>
-      </div>
-    </div>
-  </div>
+<div id="contact">
+  <h2>Contact</h2>
+  <hr>
+  <p>
+    I'm always interested in hearing about new projects, technical challenges, or opportunities
+    to collaborate. Based in Novi Sad, Serbia — get in touch through
+    <a href="https://axiomq.com/contact/">AxiomQ</a> or find me on
+    {%- assign linkedin = site.minima.social_links | where: "icon", "linkedin" | first -%}
+    <a href="{{ linkedin.url }}">LinkedIn</a>.
+  </p>
 </div>
