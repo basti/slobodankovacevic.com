@@ -21,49 +21,49 @@ contact: >
 resume:
   - company: AxiomQ
     position: CTO / Head of Software Engineering
-    description: Merged two companies to create <a href="https://axiomq.com">AxiomQ</a>. Integrated existing dev teams and expanded them further.
+    description: Merged two companies to create <a href="https://axiomq.com">AxiomQ</a>. Led the development of multiple web-based applications using open source technologies. Built and mentored engineering teams across the company, defined technology strategy, and implemented agile methodologies to deliver projects on time and within budget.
     start_year: 2017
     end_year: Present
     start_month: May
     end_month: Present
   - company: Orange Iceberg
     position: Project manager/Lead developer
-    description: Expanded <a href="http://orangeiceberg.com">Orange Iceberg</a> a Ruby development company and built a team of 5 Ruby developers. Worked as a project manager and lead developer.
+    description: Grew <a href="http://orangeiceberg.com">Orange Iceberg</a> into a Ruby development company with a team of skilled developers. Implemented best practices for Ruby development and code standards, managed multiple projects from conception to delivery, and provided technical mentorship to team members.
     start_year: 2014
     end_year: 2017
     start_month: Jan
     end_month: May
   - company: Earth.org GmbH
     position: Ruby developer
-    description: Worked on maintaining and updating yoga.info. Created a JSON service based architecture to run both yoga.info and ayurvedafinder.com using the same service.
+    description: Maintained and updated yoga.info. Designed a JSON service-based architecture with a shared API and admin section to power both yoga.info and ayurvedafinder.com.
     start_year: 2012
     end_year: 2014
     start_month: June
     end_month: Jan
   - company: Reciprocity Inc.
     position: Ruby developer
-    description: Worked as a Senior Engineer (Ruby on Rails) on <a href="http://www.reciprocitynow.com/">Reciprocity gamification app</a>, opower.com, sonatype.com and briefly on Google's GRC project.
+    description: Senior Engineer (Ruby on Rails) on the <a href="http://www.reciprocitynow.com/">Reciprocity gamification app</a>, opower.com, sonatype.com, and Google's GRC project.
     start_year: 2011
     end_year: 2014
     start_month: Feb
     end_month: Jan
   - company: Orange Iceberg
     position: Freelance Ruby developer
-    description: In June 2008 I went back to freelancing as a <strong>Ruby/Rails web developer</strong>, through my own one-man company - <a href="http://orangeiceberg.com">Orange Iceberg web development</a>.
+    description: Founded <a href="http://orangeiceberg.com">Orange Iceberg</a> as a freelance Ruby on Rails web development consultancy.
     start_year: 2008
     end_year: 2011
     start_month: Jun
     end_month: Feb
   - company: Array Studio
     position: CEO/Lead developer
-    description: In September 2001 I co-founded <a href="http://www.arraystudio.com">Array Studio</a> (a web development company) where I worked as CEO and lead developer until June 2008.
+    description: Co-founded <a href="http://www.arraystudio.com">Array Studio</a>, a web development company. Led the technical direction and development of client projects as CEO and lead developer.
     start_year: 2001
     end_year: 2008
     start_month: Sep
     end_month: Jun
   - company: Student/Freelancer
     position: Freelance developer
-    description: From 1998 to 2001 I have worked as a freelance web developer, while studying Computer Science.
+    description: Freelance web developer while studying Computer Science.
     start_year: 1998
     end_year: 2001
     start_month:
