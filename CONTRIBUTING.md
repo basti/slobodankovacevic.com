@@ -1,39 +1,52 @@
 # Contributing
 
-This repository is maintained as a Docker-run Jekyll site. Use the Docker workflow for local preview and validation.
+Jekyll personal site. Docker-only workflow.
+
+## Commands
+
+| Task | Command |
+|------|---------|
+| Preview | `docker compose up` then open `http://localhost:4000` |
+| Build (validate) | `docker compose run --rm jekyll jekyll build` |
+| Stop | `docker compose down` |
+| Reset (after dep changes) | `docker compose down -v && docker compose up` |
+
+## Source files
+
+| File | Purpose |
+|------|---------|
+| `index.html` | Homepage template (About, Resume, Contact sections) |
+| `_config.yml` | Site data: about text, resume entries, contact copy, metadata |
+| `_includes/header.html` | Custom header with nav links and dark/light toggle |
+| `_includes/footer.html` | Custom footer with social icons and copyright |
+| `_sass/minima/custom-styles.scss` | Site-specific style overrides |
+| `_sass/minima/custom-variables.scss` | Sass variable overrides |
+| `blog.md` | Blog index page (currently `published: false`) |
+| `_posts/` | Blog posts |
+
+## Common tasks
+
+- Update homepage copy or sections → edit `index.html`
+- Update about, resume, contact, or site metadata → edit `_config.yml`
+- Update blog landing page → edit `blog.md`
+- Add or edit a blog post → add/edit files in `_posts/`
+- Adjust site styling → edit `_sass/minima/custom-styles.scss`
+
+## Do not edit
+
+- `_site/`, `.jekyll-cache/` — generated output
+- Scaffold defaults in `_config.yml` — leave unless task explicitly says otherwise
 
 ## Working rules
 
-- Use `docker compose` for preview and build commands.
-- Do not treat host Ruby or Bundler as the supported workflow.
-- Never edit `_site/` or `.jekyll-cache/`.
-- Keep changes source-based. Prefer editing content, config, layouts, and site CSS instead of generated output.
-- Do not edit third-party vendor assets unless the task explicitly asks for it. This includes:
-  - `css/bootstrap.css`
-  - `css/bootstrap.min.css`
-  - legacy files under `js/`
-  - Font Awesome bundles under `fonts/font-awesome/`
-- `_config.yml` contains some Jekyll scaffold defaults. Do not remove or normalize them unless the task includes config cleanup.
-
-## Common source files
-
-- `index.html`: main landing page sections and copy
-- `_config.yml`: structured site content such as bio and resume entries
-- `blog.md`: blog index page
-- `_posts/`: blog content
-- `_layouts/`: custom templates
-- `css/style.css`: site-specific styles
-
-## Validation checklist
-
-Before finishing a change:
-
-1. Start the site with `docker compose up`.
-2. Verify the site at `http://localhost:4000`.
-3. Run a one-off build with `docker compose run --rm jekyll jekyll build`.
-
-## Notes for automated contributors
-
-- Treat `_site/` as generated output from Jekyll, even if it exists in the working directory.
+- Use `docker compose` for all preview and build commands.
+- Do not rely on host Ruby or Bundler.
+- Never edit generated output (`_site/`, `.jekyll-cache/`).
+- Keep changes source-based — prefer editing content, config, includes, and Sass.
 - If a layout or partial is not clearly referenced, verify usage before changing it.
-- Prefer minimal edits that preserve the current site structure and legacy asset setup.
+
+## Validation
+
+Before finishing any change:
+1. `docker compose up` — visually verify at `http://localhost:4000`
+2. `docker compose run --rm jekyll jekyll build` — must exit 0
