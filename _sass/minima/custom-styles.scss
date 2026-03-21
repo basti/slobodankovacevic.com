@@ -40,6 +40,29 @@
   margin: 0;
 }
 
+// ---------- About section ----------
+
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.about-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 // ---------- Theme toggle ----------
 
 .theme-toggle {
