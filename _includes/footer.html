@@ -1,0 +1,22 @@
+<link id="fa-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css">
+
+<footer class="site-footer h-card">
+  <data class="u-url" value="{{ '/' | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-top">
+      <div class="footer-name">
+        <a class="p-name" href="{{ '/' | relative_url }}">{{ site.author.name }}</a>
+      </div>
+      <div class="footer-social">
+        {%- include social.html -%}
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-bottom">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

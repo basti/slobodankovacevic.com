@@ -1,13 +1,37 @@
 // Add custom style overrides here.
 // These are loaded after Minima's base styles.
 
-// ---------- Sub-footer ----------
+// ---------- Footer ----------
 
-.subfooter {
-  text-align: center;
-  padding-top: 12px;
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-name a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $heading-color;
+  text-decoration: none;
+}
+
+.footer-social .social-media-list {
+  margin: 0;
+  display: flex;
+  gap: 8px;
+}
+
+.footer-divider {
+  margin: 16px 0;
+  border: none;
+  border-top: 1px solid $border-color-01;
+}
+
+.footer-bottom p {
   font-size: 0.8rem;
   color: $brand-color;
+  margin: 0;
 }
 
 // ---------- Theme toggle ----------
