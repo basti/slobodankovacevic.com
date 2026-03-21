@@ -60,6 +60,11 @@ description: >
   Personal site and blog of Slobodan Kovačević, Ruby on Rails developer.
 
 minima:
+  # nav_pages:
+  #   - blog.md
+  #   - index.html  # Resume
+  nav_pages:       # nav links disabled; uncomment above to restore
+    - _disabled    # placeholder — no matching page, so nothing renders
   skin: auto
   date_format: "%Y-%m-%d"
   show_excerpts: false

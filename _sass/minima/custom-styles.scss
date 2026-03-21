@@ -1,6 +1,94 @@
 // Add custom style overrides here.
 // These are loaded after Minima's base styles.
 
+// ---------- Theme toggle ----------
+
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: $text-color;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  margin-left: 4px;
+}
+
+.theme-toggle:hover {
+  color: $brand-color;
+}
+
+// Default (auto / light): show moon, hide sun
+.icon-sun  { display: none; }
+.icon-moon { display: block; }
+
+@media (prefers-color-scheme: dark) {
+  .icon-sun  { display: block; }
+  .icon-moon { display: none; }
+}
+
+// Manual overrides
+[data-theme="dark"] {
+  .icon-sun  { display: block; }
+  .icon-moon { display: none; }
+}
+
+[data-theme="light"] {
+  .icon-sun  { display: none; }
+  .icon-moon { display: block; }
+}
+
+// ---------- Manual dark mode ----------
+
+[data-theme="dark"] {
+  --minima-brand-color:           #999999;
+  --minima-brand-color-light:     #a6a6a6;
+  --minima-brand-color-dark:      #2b2b2b;
+  --minima-brand-color-dimmed:    #999999;
+  --minima-site-title-color:      #bbbbbb;
+  --minima-heading-color:         #bbbbbb;
+  --minima-text-color:            #bbbbbb;
+  --minima-background-color:      #181818;
+  --minima-code-background-color: #222222;
+  --minima-link-base-color:       #5691cd;
+  --minima-link-visited-color:    #80bbff;
+  --minima-link-hover-color:      #bbbbbb;
+  --minima-border-color-01:       rgba(255, 255, 255, 0.15);
+  --minima-border-color-02:       rgba(255, 255, 255, 0.20);
+  --minima-border-color-03:       rgba(255, 255, 255, 0.25);
+  --minima-table-text-color:      #bbbbbb;
+  --minima-table-zebra-color:     #1e1e1e;
+  --minima-table-header-bg-color: #242424;
+  --minima-table-header-border:   #2b2b2b;
+  --minima-table-border-color:    rgba(255, 255, 255, 0.15);
+}
+
+// ---------- Manual light mode ----------
+
+[data-theme="light"] {
+  --minima-brand-color:           #818181;
+  --minima-brand-color-light:     #8e8e8e;
+  --minima-brand-color-dark:      #414141;
+  --minima-brand-color-dimmed:    #818181;
+  --minima-site-title-color:      #111111;
+  --minima-heading-color:         #111111;
+  --minima-text-color:            #111111;
+  --minima-background-color:      #fdfdfd;
+  --minima-code-background-color: #f6f8fa;
+  --minima-link-base-color:       #1e69d8;
+  --minima-link-visited-color:    #134b96;
+  --minima-link-hover-color:      #111111;
+  --minima-border-color-01:       rgba(0, 0, 0, 0.15);
+  --minima-border-color-02:       rgba(0, 0, 0, 0.20);
+  --minima-border-color-03:       rgba(0, 0, 0, 0.25);
+  --minima-table-text-color:      #3e3e3e;
+  --minima-table-zebra-color:     #f3f3f3;
+  --minima-table-header-bg-color: #e9e9e9;
+  --minima-table-header-border:   #dfdfdf;
+  --minima-table-border-color:    rgba(0, 0, 0, 0.15);
+}
+
 // Resume Section
 #resume {
   padding: 30px 0 60px;
