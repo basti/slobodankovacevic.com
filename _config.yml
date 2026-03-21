@@ -1,5 +1,22 @@
-who_am_i: Slobodan Kovačević
-what_am_i: Ruby on Rails developer
+about:
+  - >
+    I'm a CTO and Head of Software Engineering with over two decades of experience
+    in web application development. I specialize in designing and implementing custom
+    software solutions using open source technologies.
+  - >
+    Currently I lead engineering teams of 50+ developers at
+    <a href="https://axiomq.com">AxiomQ</a>, where I define technology strategy,
+    architect technical solutions, and build project teams from the ground up.
+    Before that I built and grew Orange Iceberg, a Ruby development company.
+  - >
+    I've been building for the web since 1998 — from hands-on coding to leading
+    cross-functional teams that deliver scalable, high-performance applications.
+
+contact: >
+  I'm always interested in hearing about new projects, technical challenges, or opportunities
+  to collaborate. Based in Novi Sad, Serbia — get in touch through
+  <a href="https://axiomq.com/contact/">AxiomQ</a> or find me on
+  <a href="https://www.linkedin.com/in/slobodankovacevic">LinkedIn</a>.
 
 resume:
   - company: AxiomQ

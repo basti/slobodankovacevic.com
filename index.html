@@ -5,34 +5,11 @@ title: Resume
 
 <!-- About Section -->
 <div id="about">
-  <div class="container">
-    <div class="section-title text-center center">
-      <h2>About Me</h2>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2">
-        <div class="about-text">
-          <p>
-            I'm a CTO and Head of Software Engineering with over two decades of experience
-            in web application development. I specialize in designing and implementing custom
-            software solutions using open source technologies.
-          </p>
-          <p>
-            Currently I lead engineering teams of 50+ developers at
-            <a href="https://axiomq.com">AxiomQ</a>, where I define technology strategy,
-            architect technical solutions, and build project teams from the ground up.
-            Before that I built and grew Orange Iceberg, a Ruby development company.
-          </p>
-          <p>
-            I've been building for the web since 1998 — from hands-on coding to leading
-            cross-functional teams that deliver scalable, high-performance applications.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
+  <h2>About Me</h2>
+  <hr>
+  {% for paragraph in site.about %}
+  <p>{{ paragraph }}</p>
+  {% endfor %}
 </div>
 <div id="resume">
   <h2>Resume</h2>
@@ -50,11 +27,5 @@ title: Resume
 <div id="contact">
   <h2>Contact</h2>
   <hr>
-  <p>
-    I'm always interested in hearing about new projects, technical challenges, or opportunities
-    to collaborate. Based in Novi Sad, Serbia — get in touch through
-    <a href="https://axiomq.com/contact/">AxiomQ</a> or find me on
-    {%- assign linkedin = site.minima.social_links | where: "icon", "linkedin" | first -%}
-    <a href="{{ linkedin.url }}">LinkedIn</a>.
-  </p>
+  <p>{{ site.contact }}</p>
 </div>
