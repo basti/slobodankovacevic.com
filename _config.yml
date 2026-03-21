@@ -1,53 +1,108 @@
-who_am_i: Slobodan Kovačević
-what_am_i: Ruby on Rails developer
+about:
+  - >
+    I'm a CTO and Head of Software Engineering with over two decades of experience
+    in web application development. I specialize in designing and implementing custom
+    software solutions using open source technologies.
+  - >
+    Currently I lead engineering teams of 50+ developers at
+    <a href="https://axiomq.com">AxiomQ</a>, where I define technology strategy,
+    architect technical solutions, and build project teams from the ground up.
+    Before that I built and grew Orange Iceberg, a Ruby development company.
+  - >
+    I've been building for the web since 1998 — from hands-on coding to leading
+    cross-functional teams that deliver scalable, high-performance applications.
+
+contact: >
+  I'm always interested in hearing about new projects, technical challenges, or opportunities
+  to collaborate. Based in Novi Sad, Serbia — get in touch through
+  <a href="https://axiomq.com/contact/">AxiomQ</a> or find me on
+  <a href="https://www.linkedin.com/in/slobodankovacevic">LinkedIn</a>.
 
 resume:
   - company: AxiomQ
     position: CTO / Head of Software Engineering
-    description: Merged two companies to create <a href="https://axiomq.com">AxiomQ</a>. Integrated existing dev teams and expanded them further.
+    description: Merged two companies to create <a href="https://axiomq.com">AxiomQ</a>. Led the development of multiple web-based applications using open source technologies. Built and mentored engineering teams across the company, defined technology strategy, and implemented agile methodologies to deliver projects on time and within budget.
     start_year: 2017
     end_year: Present
     start_month: May
     end_month: Present
   - company: Orange Iceberg
     position: Project manager/Lead developer
-    description: Expanded <a href="http://orangeiceberg.com">Orange Iceberg</a> a Ruby development company and built a team of 5 Ruby developers. Worked as a project manager and lead developer.
+    description: Grew <a href="http://orangeiceberg.com">Orange Iceberg</a> into a Ruby development company with a team of skilled developers. Implemented best practices for Ruby development and code standards, managed multiple projects from conception to delivery, and provided technical mentorship to team members.
     start_year: 2014
     end_year: 2017
     start_month: Jan
     end_month: May
   - company: Earth.org GmbH
     position: Ruby developer
-    description: Worked on maintaining and updating yoga.info. Created a JSON service based arhitecture to run both yoga.info and ayurvedafinder.com using the same service.
+    description: Maintained and updated yoga.info. Designed a JSON service-based architecture with a shared API and admin section to power both yoga.info and ayurvedafinder.com.
     start_year: 2012
     end_year: 2014
     start_month: June
     end_month: Jan
   - company: Reciprocity Inc.
     position: Ruby developer
-    description: Worked as a Senior Engineer (Ruby on Rails) on <a href="http://www.reciprocitynow.com/">Reciprocity gamification app</a>, opower.com, sonatype.com and briefly on Google's GRC project.
+    description: Senior Engineer (Ruby on Rails) on the <a href="http://www.reciprocitynow.com/">Reciprocity gamification app</a>, opower.com, sonatype.com, and Google's GRC project.
     start_year: 2011
     end_year: 2014
     start_month: Feb
     end_month: Jan
   - company: Orange Iceberg
     position: Freelance Ruby developer
-    description: In June 2008 I went back to freelancing as a <strong>Ruby/Rails web developer</strong>, through my own one-man company - <a href="http://orangeiceberg.com">Orange Iceberg web development</a>.
+    description: Founded <a href="http://orangeiceberg.com">Orange Iceberg</a> as a freelance Ruby on Rails web development consultancy.
     start_year: 2008
     end_year: 2011
     start_month: Jun
     end_month: Feb
   - company: Array Studio
     position: CEO/Lead developer
-    description: In September 2001 I co-founded <a href="http://www.arraystudio.com">Array Studio</a> (a web development company) where I worked as CEO and lead developer until June 2008.
+    description: Co-founded <a href="http://www.arraystudio.com">Array Studio</a>, a web development company. Led the technical direction and development of client projects as CEO and lead developer.
     start_year: 2001
     end_year: 2008
     start_month: Sep
     end_month: Jun
   - company: Student/Freelancer
     position: Freelance developer
-    description: From 1998 to 2001 I have worked as a freelance web developer, while studying Computer Science.
+    description: Freelance web developer while studying Computer Science.
     start_year: 1998
     end_year: 2001
     start_month:
     end_month:
+
+title: Slobodan Kovačević
+author:
+  name: Slobodan Kovačević
+
+description: >
+  Personal site of Slobodan Kovačević — CTO, software engineering leader, and web developer since 1998.
+
+minima:
+  # nav_pages:
+  #   - blog.md
+  #   - index.html  # Resume
+  nav_pages:       # nav links disabled; uncomment above to restore
+    - _disabled    # placeholder — no matching page, so nothing renders
+  skin: auto
+  date_format: "%Y-%m-%d"
+  show_excerpts: false
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/basti"
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/slobodankovacevic"
+    - title: X (Twitter)
+      icon: x-twitter
+      url: "https://twitter.com/thebasti"
+
+# Build settings
+sass:
+  quiet_deps: true
+
+remote_theme: jekyll/minima
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme

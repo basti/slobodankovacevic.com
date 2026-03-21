@@ -1,2 +1,4 @@
 _site/
 .jekyll-cache/
+.claude/settings.local.json
+.claude/worktrees/
