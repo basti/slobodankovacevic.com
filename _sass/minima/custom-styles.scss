@@ -1,6 +1,15 @@
 // Add custom style overrides here.
 // These are loaded after Minima's base styles.
 
+// ---------- Sub-footer ----------
+
+.subfooter {
+  text-align: center;
+  padding-top: 12px;
+  font-size: 0.8rem;
+  color: $brand-color;
+}
+
 // ---------- Theme toggle ----------
 
 .theme-toggle {
