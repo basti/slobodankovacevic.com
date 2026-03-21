@@ -7,9 +7,14 @@ title: About & Resume
 <div id="about">
   <h2>About Me</h2>
   <hr>
-  {% for paragraph in site.about %}
-  <p>{{ paragraph }}</p>
-  {% endfor %}
+  <div class="about-content">
+    <img src="{{ '/images/slobodan.jpg' | relative_url }}" alt="{{ site.author.name }}" class="about-photo">
+    <div class="about-text">
+      {% for paragraph in site.about %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+  </div>
 </div>
 <div id="resume">
   <h2>Resume</h2>
